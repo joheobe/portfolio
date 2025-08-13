@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume Code Explanation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: teal;
+    }
+    h2 {
+      margin-top: 30px;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      border: 1px solid #ddd;
+      overflow-x: auto;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+      .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Explanation of the Professional Resume HTML Code</h1>
+
+  <div class="section">
+    <h2>1. Document Structure and Head Section</h2>
+    <p>
+      <strong>DOCTYPE and HTML Tag:</strong> The code starts with <code>&lt;!DOCTYPE html&gt;</code> to define the document as HTML5. The <code>&lt;html lang="en"&gt;</code> tag specifies that the language is English.
+    </p>
+    <p>
+      <strong>Meta Tags:</strong> 
+      <ul>
+        <li><code>&lt;meta charset="UTF-8"&gt;</code> sets the character encoding to UTF-8.</li>
+        <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code> ensures the layout is responsive on various devices.</li>
+      </ul>
+    </p>
+    <p>
+      <strong>Title:</strong> The <code>&lt;title&gt;</code> tag sets the text displayed in the browser tab.
+    </p>
+    <p>
+      <strong>Font Awesome:</strong> A <code>&lt;link&gt;</code> tag includes the Font Awesome CDN, enabling the use of icon fonts in the resume.
+    </p>
+    <p>
+      <strong>Internal CSS:</strong> A <code>&lt;style&gt;</code> block contains all the CSS for layout, typography, and styling of components like cards, grids, and progress bars.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>2. Global Styles</h2>
+    <p>
+      The CSS for the <code>body</code> sets the default font to Arial, sans-serif, removes default margins, applies a light grey background (<code>#f1f1f1</code>), and increases the base font size to <code>18px</code> for better readability. Additionally, link styles are defined to have a teal color with underlining on hover.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>3. Container and Grid Layout</h2>
+    <p>
+      The <code>.container</code> class centers the content with a maximum width of <code>1400px</code> and adds padding. The <code>.row</code> class uses Flexbox to arrange child elements in a row with wrapping enabled.
+    </p>
+    <p>
+      Two column classes are used:
+      <ul>
+        <li><code>.column-left</code>: occupies 33.33% of the width.</li>
+        <li><code>.column-right</code>: occupies 66.66% of the width.</li>
+      </ul>
+      A media query ensures that on screens smaller than 800px both columns expand to 100% width.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>4. Card Component</h2>
+    <p>
+      The <code>.card</code> class creates a white background card with rounded corners, a subtle shadow for depth, and a margin at the bottom. The <code>.card-content</code> class adds padding to the content within each card.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>5. Image and Name Overlay</h2>
+    <p>
+      The <code>.image-container</code> is set to <code>position: relative</code> so that its child elements can be positioned absolutely. The profile image fills 100% of the container’s width.
+    </p>
+    <p>
+      The <code>.name-overlay</code> is positioned at the bottom left of the image with a semi-transparent white background. Its font size is increased to <code>32px</code> and set to bold, making the name “Alex Johnson” stand out.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>6. Headings and Text Styling</h2>
+    <p>
+      Different heading tags are used to structure the content:
+      <ul>
+        <li><strong>h2:</strong> Used for main section titles (e.g., Professional Experience) with a font size of <code>28px</code> and teal color.</li>
+        <li><strong>h3:</strong> Used for sub-sections like Technical Skills and Languages, with a font size of <code>24px</code>.</li>
+        <li><strong>h5:</strong> Typically for job titles or institution names, set at <code>20px</code> in grey.</li>
+        <li><strong>h6:</strong> Used for dates or additional details, set at <code>16px</code> in teal.</li>
+      </ul>
+      Icons included in headings and paragraphs have extra right margin for spacing.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>7. Horizontal Rules</h2>
+    <p>
+      The <code>&lt;hr&gt;</code> elements are styled as thin, light grey lines (<code>1px solid #eee</code>) with margins to separate sections.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>8. Progress Bars for Skills and Languages</h2>
+    <p>
+      Each progress bar is built using two nested divs:
+      <ul>
+        <li><strong>.progress-container:</strong> Acts as the track with a light grey background and rounded corners.</li>
+        <li><strong>.progress-bar:</strong> The inner bar with a teal background and white text that displays the percentage. Its width is set inline (e.g., <code>width:95%</code>) to represent proficiency.
+      </ul>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>9. Footer</h2>
+    <p>
+      The footer has a teal background with white text, centered with padding. It includes social media links (LinkedIn, GitHub, WhatsApp) styled with larger font sizes for the icons, and a copyright notice.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>10. Body Content</h2>
+    <p>
+      The page is divided into two main columns:
+      <strong>Left Column:</strong>
+      <ul>
+        <li>Contains a card with the profile image and name overlay.</li>
+        <li>Displays contact information with icons for job title, location, email, and phone.</li>
+        <li>Lists technical skills and languages with corresponding progress bars.</li>
+      </ul>
+      <strong>Right Column:</strong>
+      <ul>
+        <li>Includes a card for Professional Experience with multiple job entries (job title, date range, description).</li>
+        <li>Includes a card for Education with details about academic credentials.</li>
+      </ul>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Summary</h2>
+    <p>
+      This HTML and CSS code creates a modern, responsive professional resume layout using Flexbox for the grid, card components for separate sections, progress bars to represent skills, and Font Awesome for icons. Responsive design techniques ensure the resume looks good on both desktop and mobile devices.
+    </p>
+  </div>
+  
+  <div class="section">
+    <h2>Original HTML Code</h2>
+    <p>The following code is the original resume HTML code explained above:</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+  &lt;title&gt;Professional Resume - Alex Johnson&lt;/title&gt;
+  &lt;!-- Font Awesome CDN --&gt;
+  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+  &lt;style&gt;
+/* Reset default margin and padding on the html and body, and prevent horizontal scroll */
+html, body {
+  margin: 0;           /* Remove browser's default outer spacing */
+  padding: 0;          /* Remove browser's default inner spacing */
+  overflow-x: hidden;  /* Prevent horizontal scrolling due to wide content */
+}
+
+
+/* Apply box-sizing rule globally to ensure predictable sizing across all elements */
+* {
+  box-sizing: border-box; /* Includes padding and border in the total width and height */
+}
+
+/* Base styling for the body of the document */
+body {
+  font-family: Arial, sans-serif; /* Set the primary font and fallback */
+  margin: 0; /* Remove default margin */
+  background-color: #eef2f5;/* Set a Light blue-grey  background color */
+  line-height: 1.6; /* Define line height for better readability */
+  color: #555; /* Set a medium grey text color */
+  font-size: 20px; /* Increased base font size for improved legibility */
+}
+
+/* Styles for all anchor (<a>) elements */
+a {
+  color: teal; /* Set link color to teal */
+  text-decoration: none; /* Remove the default underline from links */
+}
+
+/* Hover state for links */
+a:hover {
+  text-decoration: underline; /* Underline links when hovered for emphasis */
+}
+
+/* General container for layout structure */
+.container {
+  width: 100%;            /* Allow container to fill the full available width */
+  margin: 20px auto;      /* Center the container and add vertical spacing */
+  padding: 0 16px;        /* Add horizontal padding inside the container */
+  overflow-x: hidden;     /* Prevent horizontal overflow inside container */
+  max-width: 100vw;       /* Ensure container never exceeds viewport width */
+}
+
+
+
+/* Row style using Flexbox for grid layout */
+.row {
+  display: flex; /* Enable flex layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  margin: 0 -8px; /* Negative margins to offset column padding */
+  
+}
+
+/* Left column style in the grid layout */
+.column-left {
+  flex: 1; /* Allow flexible growth */
+  max-width: 33.33%; /* Set width to one-third of the container */
+  padding: 0 8px; /* Horizontal padding for spacing */
+  box-sizing: border-box; /* Include padding and border in element’s total width */
+}
+
+/* Right column style in the grid layout */
+.column-right {
+  flex: 2; /* Grow twice as fast as the left column */
+  max-width: 66.66%; /* Set width to two-thirds of the container */
+  padding: 0 8px; /* Horizontal padding for spacing */
+  box-sizing: border-box; /* Ensure proper sizing with padding and borders included */
+}
+
+/* Responsive design for smaller screens (max-width 800px) */
+@media screen and (max-width: 800px) {
+  .column-left, 
+  .column-right {
+    max-width: 100%; /* Columns take full width on smaller screens */
+    flex: 100%; /* Stack columns vertically by taking full flex basis */
+  }
+}
+
+/* Card style for content boxes */
+.card {
+  background: #fff; /* White background for the card */
+  margin-bottom: 20px; /* Space below each card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  overflow: hidden; /* Hide any overflowing child elements */
+}
+
+/* Padding inside card content */
+.card-content {
+  padding: 16px; /* Uniform padding around the card content */
+}
+
+/* Container for images that require an overlay */
+.image-container {
+  position: relative; /* Establish a positioning context for overlay elements */
+}
+
+/* Image styles within the image container */
+.image-container img {
+  width: 100%; /* Make the image span the full width of its container */
+  display: block; /* Remove any extra space below the image */
+}
+
+/* Overlay style for displaying a name or similar text on images */
+.name-overlay {
+  position: absolute; /* Position relative to the nearest positioned ancestor (.image-container) */
+  bottom: 0; /* Align overlay at the bottom of the container */
+  left: 0; /* Align overlay to the left edge */
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for text readability */
+  padding: 8px 16px; /* Padding around the overlay text */
+  font-size: 32px; /* Increased font size for the overlay text */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Styles for h2 headings */
+h2 {
+  margin-top: 0; /* Remove default top margin */
+  color: teal; /* Set text color to teal */
+  display: flex; /* Use flexbox for aligning child elements */
+  align-items: center; /* Vertically center any inline elements (like icons) */
+  font-size: 28px; /* Increased font size for prominence */
+}
+
+/* Styles for icons within h2 headings */
+h2 i {
+  margin-right: 10px; /* Space between the icon and the heading text */
+  color: teal; /* Ensure the icon color matches the heading */
+}
+
+/* Styles for icons within h3 headings */
+h3 i {
+  margin-right: 10px; /* Space between icon and text in h3 elements */
+}
+
+/* Styles for icons within h6 headings */
+h6 i {
+  margin-right: 10px; /* Space between icon and text in h6 elements */
+}
+
+/* Styles for icons within paragraph elements */
+p i {
+  padding-right: 10px; /* Padding to separate the icon from subsequent text */
+}
+
+/* Styles for h3 headings */
+h3 {
+  margin-bottom: 8px; /* Space below the h3 heading */
+  color: #333; /* Dark grey color for contrast */
+  font-size: 24px; /* Increased font size for better hierarchy */
+}
+
+/* Styles for h5 headings */
+h5 {
+  margin: 0; /* Remove default margins */
+  color: grey; /* Set a lighter grey color */
+  font-size: 20px; /* Increased font size for clarity */
+}
+
+/* Styles for h6 headings */
+h6 {
+  margin: 4px 0 8px; /* Set top, horizontal, and bottom margins */
+  color: teal; /* Teal text color for consistency */
+  font-size: 16px; /* Increased font size for readability */
+}
+
+/* Style for horizontal rules used as separators */
+hr {
+  border: none; /* Remove the default border */
+  border-top: 1px solid #e9d5d5; /* Add a light grey line at the top */
+  margin: 16px 0; /* Vertical spacing around the separator */
+}
+
+/* Container for progress bars */
+.progress-container {
+  background: #ddd; /* Light grey background for the progress bar container */
+  border-radius: 5px; /* Rounded corners for a smooth look */
+  margin: 4px 0 16px; /* Vertical margin to separate from other elements */
+  height: 20px; /* Fixed height for the progress bar container */
+  overflow: hidden; /* Hide overflowing parts of the progress bar */
+}
+
+/* Styles for the progress bar itself */
+.progress-bar {
+  height: 100%; /* Fill the height of the container */
+  background: teal; /* Teal background to represent progress */
+  text-align: center; /* Center any text within the bar */
+  line-height: 20px; /* Vertically center the text */
+  color: white; /* White text color for contrast */
+  border-radius: 5px; /* Rounded corners matching the container */
+  font-size: 16px; /* Increased font size for the progress bar text */
+}
+
+/* Footer section styling */
+footer {
+  background: teal; /* Teal background color for the footer */
+  color: white; /* White text for readability */
+  text-align: center; /* Center the footer text */
+  padding: 16px; /* Padding for internal spacing */
+  margin-top: 20px; /* Space above the footer to separate it from the content */
+  font-size: 18px; /* Increased font size for better visibility */
+}
+
+/* Styling for links inside the footer */
+footer a {
+  color: white; /* White color for links to match the footer text */
+  margin: 0 8px; /* Horizontal margin around links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold font weight for emphasis */
+  font-size: 20px; /* Increased font size for footer links */
+}
+
+/* Contact Information section styling */
+.contact-info p {
+  margin: 8px 0; /* Vertical margin for each paragraph */
+  font-size: 18px; /* Increased font size for legibility */
+}
+
+/* Styling for icons in the contact information section */
+.contact-info i {
+  margin-right: 8px; /* Space between the icon and the following text */
+  color: teal; /* Teal color to maintain consistency */
+  font-size: 20px; /* Increased icon size for clarity */
+}
+
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;!-- Left Column --&gt;
+      &lt;div class="column-left"&gt;
+        &lt;div class="card"&gt;
+          &lt;div class="image-container"&gt;
+            &lt;img src="../images/WhatsApp Image 2024-10-09 at 09.06.55_8db9b461.jpg" alt="Alex Johnson" /&gt;
+            &lt;div class="name-overlay"&gt;Alex Johnson&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="card-content"&gt;
+            &lt;div class="contact-info"&gt;
+              &lt;p&gt;&lt;i class="fa fa-briefcase"&gt;&lt;/i&gt;Senior Software Engineer&lt;/p&gt;
+              &lt;p&gt;&lt;i class="fa fa-home"&gt;&lt;/i&gt;New York, USA&lt;/p&gt;
+              &lt;p&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt;Email: &lt;a href="mailto:alex.johnson@example.com"&gt;alex.johnson@example.com&lt;/a&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;i class="fa fa-phone"&gt;&lt;/i&gt;Phone: &lt;a href="tel:5551234567"&gt;555-123-4567&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;hr /&gt;
+            &lt;h3&gt;&lt;i class="fa fa-code"&gt;&lt;/i&gt;Technical Skills&lt;/h3&gt;
+            &lt;p&gt;JavaScript&lt;/p&gt;
+            &lt;div class="progress-container"&gt;
+              &lt;div class="progress-bar" style="width:95%;"&gt;95%&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p&gt;React &amp; Redux&lt;/p&gt;
+            &lt;div class="progress-container"&gt;
+              &lt;div class="progress-bar" style="width:90%;"&gt;90%&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p&gt;Node.js&lt;/p&gt;
+            &lt;div class="progress-container"&gt;
+              &lt;div class="progress-bar" style="width:85%;"&gt;85%&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p&gt;HTML5 &amp; CSS3&lt;/p&gt;
+            &lt;div class="progress-container"&gt;
+              &lt;div class="progress-bar" style="width:80%;"&gt;80%&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;hr /&gt;
+            &lt;h3&gt;&lt;i class="fa fa-language"&gt;&lt;/i&gt;Languages&lt;/h3&gt;
+            &lt;p&gt;English&lt;/p&gt;
+            &lt;div class="progress-container"&gt;
+              &lt;div class="progress-bar" style="width:100%;"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p&gt;Spanish&lt;/p&gt;
+            &lt;div class="progress-container"&gt;
+              &lt;div class="progress-bar" style="width:75%;"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p&gt;French&lt;/p&gt;
+            &lt;div class="progress-container"&gt;
+              &lt;div class="progress-bar" style="width:50%;"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  
+      &lt;!-- Right Column --&gt;
+      &lt;div class="column-right"&gt;
+        &lt;div class="card"&gt;
+          &lt;div class="card-content"&gt;
+            &lt;h2&gt;&lt;i class="fa fa-suitcase"&gt;&lt;/i&gt;Professional Experience&lt;/h2&gt;
+            &lt;div&gt;
+              &lt;h5&gt;Senior Software Engineer, TechCorp Solutions&lt;/h5&gt;
+              &lt;h6&gt;&lt;i class="fa fa-calendar"&gt;&lt;/i&gt;Jan 2018 - Current&lt;/h6&gt;
+              &lt;p&gt;
+                Leading a dynamic team in designing and implementing scalable web applications using modern technologies such as React, Redux, and Node.js. Responsible for overseeing project lifecycles from conception to deployment and ensuring best practices in code quality and user experience.
+              &lt;/p&gt;
+              &lt;hr /&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;h5&gt;Software Developer, Innovatech Inc.&lt;/h5&gt;
+              &lt;h6&gt;&lt;i class="fa fa-calendar"&gt;&lt;/i&gt;Mar 2015 - Dec 2017&lt;/h6&gt;
+              &lt;p&gt;
+                Developed and maintained interactive web applications, contributing to both front-end and back-end solutions. Collaborated with cross-functional teams to improve application performance and usability, while continuously integrating feedback and innovative technologies.
+              &lt;/p&gt;
+              &lt;hr /&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;h5&gt;Junior Developer, WebWorks&lt;/h5&gt;
+              &lt;h6&gt;&lt;i class="fa fa-calendar"&gt;&lt;/i&gt;Jun 2013 - Feb 2015&lt;/h6&gt;
+              &lt;p&gt;
+                Assisted in the development and maintenance of client websites, contributing to both front-end interface design and back-end functionalities. Gained valuable experience in debugging, troubleshooting, and applying responsive design principles.
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+  
+        &lt;div class="card"&gt;
+          &lt;div class="card-content"&gt;
+            &lt;h2&gt;&lt;i class="fa fa-certificate"&gt;&lt;/i&gt;Education&lt;/h2&gt;
+            &lt;div&gt;
+              &lt;h5&gt;Stanford University&lt;/h5&gt;
+              &lt;h6&gt;&lt;i class="fa fa-calendar"&gt;&lt;/i&gt;2015 - 2017&lt;/h6&gt;
+              &lt;p&gt;Master of Science in Computer Science&lt;/p&gt;
+              &lt;hr /&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;h5&gt;University of California, Berkeley&lt;/h5&gt;
+              &lt;h6&gt;&lt;i class="fa fa-calendar"&gt;&lt;/i&gt;2009 - 2013&lt;/h6&gt;
+              &lt;p&gt;Bachelor of Science in Information Technology&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;footer&gt;
+    &lt;p&gt;Connect with me on professional networks.&lt;/p&gt;
+    &lt;p&gt;
+      &lt;a href="https://ng.linkedin.com/in/dennis-lovelyn-088157239"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;a href="https://github.com/Dennis-Derv" target="_blank"&gt;&lt;i class="fa fa-github"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;a href="https://wa.me/09130655330"&gt;&lt;i class="fa fa-whatsapp"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p&gt;© 2023 Alex Johnson&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+  </div>
+    <div class="container">
+    <h1>Publish Your HTML/CSS Code Live Using GitHub and VS Code</h1>
+    <p>To connect your GitHub account to VS Code and publish your HTML/CSS code live, follow these steps:</p>
+
+    <ol>
+      <li>First, link your GitHub account to VS Code. To do this, click on the account icon at the bottom-left corner of the VS Code window. Then, select <strong>"Backup and Sync Settings"</strong> from the dropdown menu.</li>
+
+      <li>In the VS Code search bar, type <strong>"Sign In"</strong> and click on the result. This will prompt you to sign in to your GitHub account.</li>
+
+      <li>Next, install the <strong>"Git Pull"</strong> extension from the VS Code Extensions marketplace.</li>
+
+      <li>Initialize a new Git repository in your project folder. Make sure to set the repository visibility to <strong>"Public"</strong>.</li>
+
+      <li>Commit and sync your changes to GitHub.</li>
+
+      <li>Go to your GitHub account and navigate to the repository you just created. Click on <strong>"Settings"</strong>, then scroll down and select <strong>"Pages"</strong> to publish your HTML/CSS code live.</li>
+
+      <li>In the GitHub Pages section, select <strong>"main" or "master"</strong> as the branch, and choose the <strong>root</strong> directory as the source.</li>
+
+      <li>Click <strong>"Save"</strong>.</li>
+
+      <li>Wait a few minutes for GitHub to publish your site.</li>
+
+      <li>You should now see your site live at the provided GitHub Pages URL.</li>
+    </ol>
+
+    <p><strong>That's it!</strong> Your code is now live and accessible via a GitHub Pages URL.</p>
+  </div>
+</body>
+</html>
